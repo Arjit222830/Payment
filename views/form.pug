@@ -1,0 +1,26 @@
+<html>
+   <head>
+      <title>Merchant Check Out Page</title>
+   </head>
+   <body>
+
+        -var x= Object.keys(params);
+
+        <center>
+            <h1>Please do not refresh this page...</h1>
+        </center>
+
+        form(method="post" action=url name="paytm")
+            <table border="1">
+                <tbody>
+                    -for(var i=0;i<x.length;i++)
+                        input(type="hidden" name=x[i] value=params[x[i]])
+                    input(type='hidden' name='CHECKSUMHASH' value=checksum)
+                </tbody>
+            </table>
+
+        script(type="text/javascript").
+            document.paytm.submit();
+
+   </body>
+</html>
