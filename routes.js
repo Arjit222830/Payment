@@ -5,7 +5,7 @@ module.exports= (app)=>{
     app.get('/payment',(req,res)=>{
         let params = {};
         
-        params['MID'] ='MID
+        params['MID'] ='MID',
         params['WEBSITE']='WEBSTAGING',
         params['CHANNEL_ID'] = 'WEB',
         params['INDUSTRY_TYPE_ID']= 'Retail',
