@@ -13,7 +13,7 @@ module.exports= (app)=>{
         params['CUST_ID']= 'CUST0011',
         params['TXN_AMOUNT']= '1',
         params['CALLBACK_URL']= 'http://localhost:3000/callback',
-        params['EMAIL']= 'dsds,
+        params['EMAIL']= 'dsds',
         params['MOBILE_NO']= '000',
 
         checksum_lib.genchecksum(params,'ZIHZ_lhDJ3z3SeyC',function(err,checksum){
